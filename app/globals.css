@@ -18,4 +18,12 @@
   h4 {
     @apply text-xl font-semibold
   }
+
+  .table-cell-spacing td {
+    padding-right: 3rem; 
+  }
+
+  .table-cell-spacing td:last-child {
+    padding-right: 0;
+  }
 }

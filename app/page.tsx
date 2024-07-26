@@ -1,6 +1,7 @@
 import About from "@/components/about/About";
 import CarDetails from "@/components/car details/CarDetails";
 import CarGallery from "@/components/car gallery/CarGallery";
+import Specifications from "@/components/specifications/Specifications";
 import Tesla from "@/data/tesla";
 
 
@@ -28,7 +29,12 @@ export default function Home() {
         </div>
       </section>
       <section>
-        <About/>
+        <About
+          features={Tesla.features}
+        />
+      </section>
+      <section>
+        <Specifications/>
       </section>
     </main>
   );
