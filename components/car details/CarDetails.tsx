@@ -5,7 +5,7 @@ import CompanyOverview from './components/CompanyOverview';
 import CarDetailsDropDown from './components/CarDetailsDropDown';
 import { ITesla } from '@/data/common';
 
-type Props = Omit<ITesla, 'features' | 'images'>
+type Props = Omit<ITesla, 'features' | 'images' | 'specifications'>
 const CarDetails = ({state, title, vin, rating, price, estimatedDelivery, colours, companyDescription, companyLink}: Props) => {
   return (
     

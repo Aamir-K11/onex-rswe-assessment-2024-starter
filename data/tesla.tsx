@@ -73,6 +73,39 @@ const Tesla: ITesla = {
             id: 5,
             path: "/assets/evfy/red-tesla.png"
         },
+    ],
+    specifications: [
+       {
+        exterior: {
+            bodyStyle: "Hatchback",
+            exteriorColour: "Blue",
+            length:"175”",
+            wheelBase:"106”",
+            width:"69.7”",
+            fullWidth:"N/A",
+            clearance:"6”"
+        },
+        interior: {
+            seating: "5 adults",
+            interiorColour: "N/A",
+            headRoomFront: "41”",
+            headRoomBack:"37”",
+            legRoomFront:"42”",
+            legRoomBack:"33”",
+            shoulderRoomFront:"54”"
+        },
+        bevPerfomance: {
+            horsePower:"107hp",
+            mpge:"102",
+            topSpeed:"90mph"
+        },
+        charging: {
+            electricRange:"73 Mi.",
+            batterySize:"24 kWh",
+            costOfCharge:"$2.50"
+        }
+
+       }
     ]
 
 }

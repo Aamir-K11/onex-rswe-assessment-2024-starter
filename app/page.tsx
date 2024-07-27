@@ -7,7 +7,7 @@ import Tesla from "@/data/tesla";
 
 export default function Home() {
   return (
-    <main className="flex flex-col min-h-screen mx-4 desktop:mx-24">
+    <main className="flex flex-col min-h-screen mx-6 desktop:mx-24 overflow-x-hidden">
       <section className="flex flex-col desktop:flex-row items-center tablet:items-start my-16">
         <div className="w-full flex justify-center items-center dektop:mx-24">
           <CarGallery
@@ -34,7 +34,9 @@ export default function Home() {
         />
       </section>
       <section>
-        <Specifications/>
+        <Specifications
+           specifications={Tesla.specifications}
+        />
       </section>
     </main>
   );
