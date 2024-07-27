@@ -29,6 +29,7 @@ const CarGallery = ({images}: Props) => {
             </div>
             <div>
                 <Image
+                className='showroom'
                 src={images[activeIndex].path}
                 width={800}
                 height={800}
@@ -46,16 +47,17 @@ const CarGallery = ({images}: Props) => {
             </div>
            
         </div>
-        <div className='flex justify-center items-center my-8 desktop:my-24 space-x-4'>
+        <div className='flex justify-center items-center my-8 desktop:my-16 space-x-4'>
             {
                 images.map((img, index) => (
-                    <div key={img.id} className={`border rounded-md  ${index === activeIndex ? 'border border-teal' : 'opacity-30'}`}>
+                    <div key={img.id} className={`border rounded-md ${index === activeIndex ? 'border border-teal' : 'opacity-30'}`}>
                         <Image
-                        src={img.path}
-                        width={80}
-                        height={80}
-                        alt="Tesla"
-                        onClick={() => setActiveIndex(index)}
+                            className='scaled-image'
+                            src={img.path}
+                            width={80}
+                            height={20}
+                            alt="Tesla"
+                            onClick={() => setActiveIndex(index)}
                         />
                     </div>
                 ))
