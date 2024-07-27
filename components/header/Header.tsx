@@ -9,7 +9,7 @@ import {
     NavigationMenuTrigger,
   } from "@/components/ui/navigation-menu"
 import MobileNav from './MobileNav';
-import NavLinks from './NavLinks';
+import NavLinks, { CountryNav } from './NavLinks';
 import Link from 'next/link';
 
 const Header = () => {
@@ -28,23 +28,7 @@ const Header = () => {
       </div>
       <div>
         <div className='flex justify-center items-center space-x-2 max-mobile:hidden'>
-        <NavigationMenu>
-                    <NavigationMenuList>
-                        <NavigationMenuItem>
-                                <NavigationMenuTrigger>
-                                <Image
-                                 src="/assets/flags/singapore.svg"
-                                 height={10}
-                                 width={25}
-                                 alt="Singapore flag"
-                                />
-                                </NavigationMenuTrigger>
-                                <NavigationMenuContent>
-                                    <NavigationMenuLink>Link</NavigationMenuLink>
-                                </NavigationMenuContent>
-                        </NavigationMenuItem>
-                    </NavigationMenuList>
-            </NavigationMenu>
+            <CountryNav/>
             <Link href="/login">
               <p className='text-sm font-semibold'>Log In/Sign Up</p>
             </Link>

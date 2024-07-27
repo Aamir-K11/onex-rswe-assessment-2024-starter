@@ -15,7 +15,7 @@ const CarOverview = ({state, title, vin, rating, price, estimatedDelivery}: Prop
                 <Rating rating={rating}/>
                 <h4 className='py-6'>{price}</h4>
             </div>
-            <div className='w-full pt-6 space-y-6 text-center'>
+            <div className='max-w-md pt-6 space-y-6 text-center'>
                 <div className='px-8 py-4 bg-[#0036C3] text-teal hover:text-primary hover:bg-blue-900 rounded-md text-center'>
                 <button>Order Now</button>
                 </div>

@@ -7,14 +7,14 @@ import Tesla from "@/data/tesla";
 
 export default function Home() {
   return (
-    <main className="flex flex-col min-h-screen mx-6 desktop:mx-24 overflow-x-hidden">
-      <section className="flex flex-col desktop:flex-row items-center tablet:items-start my-16">
+    <main className="flex flex-col min-h-screen mx-6 tablet:mx-20 desktop:mx-24 overflow-x-hidden">
+      <section className="flex flex-col items-center desktop:flex-row desktop:items-start my-16">
         <div className="w-full flex justify-center items-center dektop:mx-24">
           <CarGallery
             images={Tesla.images}
           />
         </div>
-        <div className="w-full tablet:max-w-sm">
+        <div className="ml-6 desktop:max-w-sm">
           <CarDetails
             state={Tesla.state}
             title={Tesla.title}
